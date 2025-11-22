@@ -7,7 +7,7 @@ const boobs = function() {
     rotate: ['-10deg', '0deg'],
     duration: 1000,
     ease: 'outElastic(1,0.3)',
-    delay: 100,
+    delay: 600,
     });
 
 
@@ -19,7 +19,7 @@ const boobs = function() {
     rotate: ['-10deg', '0deg'],
     duration: 1400,
     ease: 'outElastic(1,0.3)',
-    delay: 100,
+    delay: 600,
     });
 
 
@@ -30,7 +30,7 @@ const boobs = function() {
     translateY: [-20, 0, -3, 0],
     rotate: ['-10deg', '0deg'],
     duration: 1200,
-    delay: 650,
+    delay: 1150,
     easing: 'easeOutCubic',
     });
 
@@ -42,7 +42,7 @@ const boobs = function() {
     translateY: [-20, 0, -3, 0],
     rotate: ['-10deg', '0deg'],
     duration: 1200,
-    delay: 650,
+    delay: 1150,
     easing: 'easeOutCubic',
     });
 
