@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+    /*Tits*/
+    .tits {
+      --visota1: 200px;
+      --visota2: 50px;
+      width: 100%;
+      display: inline-flex;
+      place-content: center;
+      flex-wrap: wrap;
+      opacity: 0;
+      background-color: rgb(255, 213, 183);
+      height: 100vh;
+    }
+
+    .tit--left .circle{
+      width: 200px;
+      height: var(--visota1);
+      background-color: #ffd5b7;
+      border-radius: 50%;
+      box-shadow: inset 0 -25px 15px rgba(0, 0, 0, 0.4), 
+        0px 25px 10px rgba(0, 0, 0, 0.3);
+      align-content: center;
+      transform: scale(1);
+      transition: transform 0.3s ease;
+    }
+
+    .tit--left:hover .circle:hover {
+      /* Увеличиваем до 110% при наведении */
+      transform: scale(1.1);
+      cursor: url('img/five.png'), auto;
+    }
+
+    .tit--left:active .circle:active {
+      /* Увеличиваем до 110% при наведении */
+      transform: scale(0.9);
+      cursor: url('img/fiveR.png'), auto;
+    }
+
+    .tit--right .circle{
+      width: var(--visota1);
+      background-color: #ffd5b7;
+      height: 200px;
+      border-radius: 50%;
+      box-shadow: inset 0 -25px 15px rgba(0, 0, 0, 0.4), 
+        0px 25px 10px rgba(0, 0, 0, 0.3);
+      align-content: center;
+      transform: scale(1);
+      transition: transform 0.3s ease;
+    }
+
+    .tit--right:hover .circle:hover {
+      /* Увеличиваем до 110% при наведении */
+      transform: scale(1.1);
+      cursor: url('img/fiveR.png'), auto;
+      
+    }
+
+    .tit--right:active .circle:active {
+      /* Увеличиваем до 110% при наведении */
+      transform: scale(0.9);
+      cursor: url('img/five.png'), auto;
+    }
+
+    .niple_left {
+      width: 50px;
+      background-color: #dc7899;
+      height: var(--visota2);
+      margin-right: 60px;
+      margin-top: calc((var(--visota1) - var(--visota2))/2);
+      border-radius: 50%;
+      box-shadow: inset 0 -7px 15px rgba(0, 0, 0, 0.5), 
+        0 10px 9px rgba(0, 0, 0, 0.2);
+      justify-self: center;
+      align-content: center;
+    }
+
+    .niple_right {
+      width: 50px;
+      background-color: #dc7899;
+      height: var(--visota2);
+      margin-left: 60px;
+      margin-top: calc((var(--visota1) - var(--visota2))/2);
+      border-radius: 50%;
+      box-shadow: inset 0 -7px 15px rgba(0, 0, 0, 0.5), 
+        0 10px 9px rgba(0, 0, 0, 0.2);
+      justify-self: center;
+      align-content: center;
+    }
+
+    .niple1 {
+      width: 20px;
+      background-color: #f48da8;
+      height: 20px;
+      margin-left: 17px;
+      border-radius: 50%;
+      box-shadow: inset 4px -5px 4px rgba(0, 0, 0, 0.5), 0 17px 9px rgba(0, 0, 0, 0.2);
+      justify-self: center;
+    }
+
+    .niple_left:hover {
+      /* Увеличиваем до 110% при наведении */
+      transform: scale(1.1);
+      cursor: url('img/hand-point.png'), auto;
+    }
+
+    .niple_left:active {
+      /* Увеличиваем до 110% при наведении */
+      transform: scale(1.1);
+      cursor: url('img/hand-point-clickL.png'), auto;
+    }
+
+    .niple_right:hover {
+      /* Увеличиваем до 110% при наведении */
+      transform: scale(1.1);
+      cursor: url('img/hand-point2.png'), auto;
+    }
+
+    .niple_right:active {
+      /* Увеличиваем до 110% при наведении */
+      transform: scale(1.1);
+      cursor: url('img/hand-point-clickR.png'), auto;
+    }
+
+    .niple2 {
+      width: 20px;
+      background-color: #f48da8;
+      height: 20px;
+      margin-right: 17px;
+      border-radius: 50%;
+      box-shadow: inset 4px -5px 4px rgba(0, 0, 0, 0.5), 0 17px 9px rgba(0, 0, 0, 0.2);
+      justify-self: center;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="tits">
+        <div class="tit--left">
+            <div class="circle">
+                <div class="niple_left"><div class="niple2"></div></div>
+            </div>
+        </div>
+        <div class="tit--right">
+            <div class="circle">
+                <div class="niple_right"><div class="niple1"></div></div>
+            </div>
+        </div>
+    </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+  <script>
+    // document.addEventListener('DOMContentLoaded', function() {
+    //   anime({
+    //     targets: '.box',
+    //     opacity: [0, 1],
+    //     translateY: [350, 0],
+    //     duration: 1800,
+    //     easing: 'easeOutCubic'
+    //   });
+
+    //   anime({
+    //     targets: '.prebox',
+    //     opacity: [0, 1],
+    //     translateX: [150, 0],
+    //     duration: 500,
+    //     easing: 'easeOutCubic'
+    //   })
+    // });
+    const boobs = function() {
+      anime({
+        targets: '.tits',
+        opacity: [0, 1],
+        duration: 1,
+      });
+
+      anime({
+        targets: '.tit--left',
+        opacity: [0, 1],
+        translateY: [-50, 0],
+        rotate: ['-10deg', '0deg'],
+        duration: 1000,
+        ease: 'outElastic(1,0.3)'
+      });
+
+
+
+      anime({
+        targets: '.tit--right',
+        opacity: [0, 1],
+        translateY: [-70, 0],
+        rotate: ['-10deg', '0deg'],
+        duration: 1400,
+        ease: 'outElastic(1,0.3)'
+      });
+
+
+
+      anime({
+        targets: '.niple_left',
+        opacity: [0, 1],
+        translateY: [-20, 0, -3, 0],
+        rotate: ['-10deg', '0deg'],
+        duration: 1200,
+        delay: 650,
+        easing: 'easeOutCubic',
+      });
+
+
+
+      anime({
+        targets: '.niple_right',
+        opacity: [0, 1],
+        translateY: [-20, 0, -3, 0],
+        rotate: ['-10deg', '0deg'],
+        duration: 1200,
+        delay: 650,
+        easing: 'easeOutCubic',
+      });
+
+
+      anime({
+        targets: '.niple1',
+        opacity: [0, 1],
+        translateY: [-20, 0, -10, 0],
+        rotate: ['-10deg', '0deg'],
+        duration: 1200,
+        delay: 700,
+        easing: 'easeOutCubic',
+
+      });
+
+
+
+      anime({
+        targets: '.niple2',
+        opacity: [0, 1],
+        translateY: [-20, 0, -10, 0],
+        rotate: ['-10deg', '0deg'],
+        duration: 1200,
+        delay: 700,
+        easing: 'easeOutCubic'
+      });
+    };
+
+    document.addEventListener('DOMContentLoaded', boobs);
+
+  
+  </script>
+</body>
+</html>
