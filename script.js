@@ -6,7 +6,8 @@ const boobs = function() {
     translateY: [-50, 0],
     rotate: ['-10deg', '0deg'],
     duration: 1000,
-    ease: 'outElastic(1,0.3)'
+    ease: 'outElastic(1,0.3)',
+    delay: 100,
     });
 
 
@@ -17,7 +18,8 @@ const boobs = function() {
     translateY: [-70, 0],
     rotate: ['-10deg', '0deg'],
     duration: 1400,
-    ease: 'outElastic(1,0.3)'
+    ease: 'outElastic(1,0.3)',
+    delay: 100,
     });
 
 
