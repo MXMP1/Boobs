@@ -1,12 +1,6 @@
 //Boobs animation
 const boobs = function() {
     anime({
-    targets: '.tits',
-    opacity: [0, 1],
-    duration: 1,
-    });
-
-    anime({
     targets: '.tit--left',
     opacity: [0, 1],
     translateY: [-50, 0],
